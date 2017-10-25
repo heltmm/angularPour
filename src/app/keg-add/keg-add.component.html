@@ -1,0 +1,31 @@
+
+<div class="card">
+  <div class="card-body">
+    <h1>New Keg:</h1>
+    <label>Enter Brewery:</label>
+    <input #newBrewery><br>
+    <label>Enter Name:</label>
+    <input #newName><br>
+    <label>Enter Style:</label>
+    <input #newStyle><br>
+    <label>Enter Origin:</label>
+    <input #newOrigin><br>
+    <label>Enter ABV:</label>
+    <input #newAbv><br>
+    <label>Enter IBU:</label>
+    <input #newIbu><br>
+    <label>Enter Price:</label>
+    <input #newPrice><br>
+    <label>Enter Serving Amount:</label>
+    <input #newAmount><br>
+    <label>Enter Tap Number:</label>
+    <input #newTap><br>
+    <label>Enter Keg Size:</label>
+    <select #newKegVol>
+      <option [value]="1984">1/2 Barel(1984oz)</option>
+      <option [value]="992">1/6 Barel(992oz)</option>
+    </select><br>
+
+    <button class="btn btn-info" (click)="new(newBrewery.value, newName.value, newStyle.value, newOrigin.value, newAbv.value, newIbu.value, newPrice.value, newAmount.value, newKegVol.value, newTap.value)">Add Keg</button>
+  </div>
+</div>
