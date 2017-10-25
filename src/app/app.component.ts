@@ -11,7 +11,7 @@ export class AppComponent {
 
   masterKegs: Keg[] = [
     new Keg('Fresh Squeezed', 'Deschutes', 'Bend OR', 'IPA', 6.4, 60, 16, 6, 1984, 1),
-    new Keg('Delerium Tremens', 'Delerium', 'Belgium', 'Belgian Strong Ale', 8.5, 26, 12, 8, 300, 2),
+    new Keg('Delerium Tremens', 'Delerium', 'Belgium', 'Belgian Strong Ale', 8.5, 26, 12, 8, 992, 2),
     new Keg('Shower Beer', 'Champion', 'Charlotesville, Va', 'Czech Pils', 4.5, 35, 16, 5, 1984, 3),
     new Keg('Accumulation', 'New Belgium', 'Ft. Collins, CO', 'White IPA', 6.2, 55, 16, 6, 1984, 4)
   ];
@@ -20,6 +20,9 @@ export class AppComponent {
     this.selectedKeg = kegToEdit;
   }
   deleteKeg(kegToDelete){
+    if(kegToDelete === this.selectedKeg){
+      this.selectedKeg = null;
+    }
     this.masterKegs.splice(this.masterKegs.indexOf(kegToDelete), 1)
   }
 
