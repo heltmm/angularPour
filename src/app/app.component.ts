@@ -20,7 +20,7 @@ export class AppComponent {
     this.selectedKeg = kegToEdit;
   }
   deleteKeg(kegToDelete){
-    this.masterKegs.splice(this.masterKegs.indexOf(kegToDelete))
+    this.masterKegs.splice(this.masterKegs.indexOf(kegToDelete), 1)
   }
 
   finishedEditing() {
