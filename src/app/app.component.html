@@ -1,5 +1,5 @@
 <div class="container">
-  <app-keg-list [childKegList]='masterKegs' (clickSender)="editKeg($event)">Pouring...</app-keg-list>
+  <app-keg-list [childKegList]='masterKegs' (clickSender)="editKeg($event)"(clickSenderTwo)="deleteKeg($event)">Pouring...</app-keg-list>
   <app-keg-edit [childKegEdit]='selectedKeg' (doneSender)="finishedEditing()">Testing</app-keg-edit>
   <app-keg-add (newKegSender)="addKeg($event)"></app-keg-add>
 </div>

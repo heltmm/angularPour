@@ -9,8 +9,12 @@ import { Keg } from './../keg.model';
 export class KegListComponent {
   @Input() childKegList: Keg[];
   @Output() clickSender = new EventEmitter();
+  @Output() clickSenderTwo = new EventEmitter();
 
   editKeg(kegToEdit: Keg) {
     this.clickSender.emit(kegToEdit);
+  }
+  deleteKeg(kegToDelete: Keg){
+    this.clickSenderTwo.emit(kegToDelete)
   }
 }

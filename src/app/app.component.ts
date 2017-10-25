@@ -19,6 +19,9 @@ export class AppComponent {
   editKeg(kegToEdit) {
     this.selectedKeg = kegToEdit;
   }
+  deleteKeg(kegToDelete){
+    this.masterKegs.splice(this.masterKegs.indexOf(kegToDelete))
+  }
 
   finishedEditing() {
     this.selectedKeg = null
