@@ -28,11 +28,15 @@ export class Keg {
   stat() {
     this.kegPercent = Math.floor((this.kegVol / this.initVol) * 100);
 
+    if(this.kegPercent > 50){
+      this.kegStatus = 3;
+    }
+
     if ((this.kegPercent <= 50 ) && (this.kegVol > this.servingSize * 10)) {
-      this.kegStatus = 2
+      this.kegStatus = 2;
 
     } else if ((this.kegVol < this.servingSize * 10) && (this.kegPercent > 0)) {
-      this.kegStatus = 1
+      this.kegStatus = 1;
     }
   }
 

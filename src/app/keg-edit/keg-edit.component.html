@@ -1,31 +1,34 @@
-<div class="container">
-  <div *ngIf="childKegEdit">
-    <h3>{{childKegEdit.name}} {{childKegEdit.kegPercent}}%</h3>
-    <hr>
-    <h3>Edit</h3>
-    <label>Change Beer Brewery:</label>
-    <input [(ngModel)]="childKegEdit.brewery"><br>
-    <label>Change Beer Name:</label>
-    <input [(ngModel)]="childKegEdit.name"><br>
-    <label>Change Beer Style:</label>
-    <input [(ngModel)]="childKegEdit.style"><br>
-    <label>Change Beer Origin:</label>
-    <input [(ngModel)]="childKegEdit.origin"><br>
-    <label>Change Beer ABV:</label>
-    <input [(ngModel)]="childKegEdit.abv"><br>
-    <label>Change Beer IBU:</label>
-    <input [(ngModel)]="childKegEdit.ibu"><br>
-    <label>Change Beer Price:</label>
-    <input [(ngModel)]="childKegEdit.price"><br>
-    <label>Change Beer Serving Amount:</label>
-    <input [(ngModel)]="childKegEdit.servingSize"><br>
-    <label>Change Amount Left in Keg:</label>
-    <input [(ngModel)]="childKegEdit.kegVol"><br>
-    <label>Change Keg Size:</label>
-    <input type="radio" [(ngModel)]="childKegEdit.initVol"
-    [value]="1984">1984oz (Half Barrel)<br>
-    <input type="radio" [(ngModel)]="childKegEdit.initVol"
-    [value]="992">992oz (Sixtel)<br>
-    <button (click)="done()">Done</button>
+
+<div *ngIf="childKegEdit">
+  <div class="card">
+    <div class="card-body">
+      <h3>{{childKegEdit.name}} {{childKegEdit.kegPercent}}%</h3>
+      <hr>
+      <h3>Edit</h3>
+      <label>Change Beer Brewery:</label>
+      <input [(ngModel)]="childKegEdit.brewery"><br>
+      <label>Change Beer Name:</label>
+      <input [(ngModel)]="childKegEdit.name"><br>
+      <label>Change Beer Style:</label>
+      <input [(ngModel)]="childKegEdit.style"><br>
+      <label>Change Beer Origin:</label>
+      <input [(ngModel)]="childKegEdit.origin"><br>
+      <label>Change Beer ABV:</label>
+      <input [(ngModel)]="childKegEdit.abv"><br>
+      <label>Change Beer IBU:</label>
+      <input [(ngModel)]="childKegEdit.ibu"><br>
+      <label>Change Beer Price:</label>
+      <input [(ngModel)]="childKegEdit.price"><br>
+      <label>Change Beer Serving Amount:</label>
+      <input [(ngModel)]="childKegEdit.servingSize"><br>
+      <label>Change Amount Left in Keg:</label>
+      <input [(ngModel)]="childKegEdit.kegVol"><br>
+      <label>Change Keg Size:</label>
+      <input type="radio" [(ngModel)]="childKegEdit.initVol"
+      [value]="1984">1984oz (Half Barrel)<br>
+      <input type="radio" [(ngModel)]="childKegEdit.initVol"
+      [value]="992">992oz (Sixtel)<br>
+      <button (click)="done()">Done</button>
+    </div>
   </div>
 </div>
