@@ -1,2 +1,2 @@
-<app-keg-list [childKegs]='masterKegs'>Pouring...</app-keg-list>
-<app-keg-edit [childKegs]='masterKegs'>Pouring...</app-keg-edit>
+<app-keg-list [childKegList]='masterKegs' (clickSender)="editKeg($event)">Pouring...</app-keg-list>
+<app-keg-edit [childKegEdit]='selectedKeg' (doneSender)="done()">Testing</app-keg-edit>

@@ -7,6 +7,11 @@ import { Keg } from './../keg.model';
   styleUrls: ['./keg-edit.component.css']
 })
 export class KegEditComponent {
-  @Input() childKegs: Keg[];
+  @Input() childKegEdit: Keg[];
+  @Output() doneSender = new EventEmitter();
+
+  done() {
+    this.doneSender.emit();
+  }
 
 }
