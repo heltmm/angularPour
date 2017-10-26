@@ -1,6 +1,6 @@
 
 <div class="card mb-3" *ngFor="let keg of childKegList">
   <div class="card-body">
-    <h1>{{keg.brewery}} <span class="color">{{keg.name}}</span></h1><p>{{keg.style}}</p><h4>{{keg.origin}}   ABV {{keg.abv}}% IBU {{keg.ibu}}</h4><p>${{keg.price}}.00 {{keg.servingSize}}oz</p><h4>Keg left: {{keg.kegVol}} oz</h4><button class="btn btn-warning" (click)="keg.pour()" (click)="keg.stat()">Pour</button><br><button class="btn btn-info" (click)="editKeg(keg)">Edit</button> <button class="btn btn-danger" (click)="deleteKeg(keg)">Delete</button><br><img src="{{keg.graphic}}" alt="keg status"><br>
+    <h1>{{keg.brewery}} <span class="color">{{keg.name}}</span><img src="{{keg.graphic}}" alt="keg status"></h1><p>{{keg.style}}</p><h4>{{keg.origin}}   ABV {{keg.abv}}% IBU {{keg.ibu}}</h4><p>${{keg.price}}.00 {{keg.servingSize}}oz</p><h4>Keg left: {{keg.kegVol}} oz</h4><button class="btn btn-warning" (click)="keg.pour()" (click)="keg.stat()">Pour</button><br><button class="btn btn-info" (click)="editKeg(keg)">Edit</button> <button class="btn btn-danger" (click)="deleteKeg(keg)">Delete</button><br><br>
   </div>
 </div>

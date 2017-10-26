@@ -1,5 +1,5 @@
-.img {
-  text-align: right;
+img {
+  float: right;
 }
 .color {
   color: brown;
