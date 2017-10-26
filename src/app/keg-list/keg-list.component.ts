@@ -17,4 +17,5 @@ export class KegListComponent {
   deleteKeg(kegToDelete: Keg){
     this.clickSenderTwo.emit(kegToDelete)
   }
+
 }
