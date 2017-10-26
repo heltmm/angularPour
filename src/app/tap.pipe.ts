@@ -2,7 +2,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { Keg } from './keg.model';
 
 @Pipe({
-  name: 'tap'
+  name: 'tap',
+  pure: false
 })
 export class TapPipe implements PipeTransform {
 
