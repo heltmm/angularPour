@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { KegListComponent } from './keg-list/keg-list.component';
 import { KegEditComponent } from './keg-edit/keg-edit.component';
 import { KegAddComponent } from './keg-add/keg-add.component';
+import { TapPipe } from './tap.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     KegListComponent,
     KegEditComponent,
-    KegAddComponent
+    KegAddComponent,
+    TapPipe
   ],
   imports: [
     BrowserModule,

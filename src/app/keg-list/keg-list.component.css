@@ -1,6 +1,6 @@
-img {
-  float: right;
-}
 .color {
   color: brown;
+}
+.right{
+  float: right;
 }
